@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Barlow&display=swap');
+
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$font-1: 'Barlow', sans-serif;
+$font-2:'Dancing Script', cursive;
+$mainColorLink:#24818d;
+$mainColorLinkHover:#9ebbbe;
+
+$color-isabeline:#f8edeb;
+$color-misty-rose:#FAE1DD;
+$color-blue-night:#03045e;
+$color-blue-sky:#00b4d8;
+$white:#ddd;
+$black:#333;
+
+
+
+*{
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }  
+
+li,a{
+  list-style: none;
+  text-decoration: none;
+}
+a, i{
+  color: $mainColorLink;
+}
+
+a:hover{
+  color: $mainColorLinkHover;
+  transition: 0.4s;
+}
+
+.menu button{
+  background: none;
+  border: none;
+  
+}
+
+p{
+  padding: 3rem;
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+html, body {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;padding: 0;
+    background-image: url(../img/tim-umphreys-6x1zA_0H9LA-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    font-family: $font-1;
+    z-index: -10;
+  }
+
