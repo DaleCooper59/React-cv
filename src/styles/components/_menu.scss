@@ -1,0 +1,25 @@
+/******************************************************************************************
+  *MENU
+  *******************************************************************************************/
+.menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 4rem 4rem 2rem 4rem;
+    padding: 0 3rem;
+    text-decoration: none;
+    li {
+        margin: 0 auto;
+    }
+    a {
+        margin: 1rem 1rem;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        display: none;
+    }
+    i {
+        opacity: 1;
+    }
+}

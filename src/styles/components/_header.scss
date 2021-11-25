@@ -1,0 +1,26 @@
+/**********************************************************************************************
+*Header
+***********************************************************************************************/
+
+.header_title {
+    color: white;
+    overflow: hidden;
+    max-width: 100%;
+
+    .title_portfolio {
+        margin: 8rem 0 2rem 0;
+        text-align: center;
+    }
+}
+
+#header_mobile {
+    display: none;
+}
+
+.header_sub {
+    color: white;
+    font-family: $font-2;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}

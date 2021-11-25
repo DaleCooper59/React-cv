@@ -1,0 +1,45 @@
+/*******************************************************************************************
+*PARAGRAPH
+********************************************************************************************/
+#competences {
+    height: 400px;
+    text-align: center;
+
+    >small {
+        font-size: 10px;
+        list-style: none;
+    }
+
+    .ele {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 2rem 3rem 5rem 3rem;
+    }
+
+    .ele>img {
+        padding: 0.5rem;
+    }
+
+}
+
+#experiences {
+    display: flex;
+    align-items: center;
+
+    p {
+        flex: 2;
+        padding: 1rem;
+        margin-right: 3rem;
+    }
+}
+
+#ul-contact {
+    padding: 0;
+    text-align: center;
+    line-height: 3rem;
+}
+
+#mail-contact {
+    font-size: smaller;
+}

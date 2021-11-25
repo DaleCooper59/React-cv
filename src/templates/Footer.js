@@ -1,9 +1,12 @@
 import React from 'react';
 
 const Footer = () => {
+    
+
+    let date = new Date()
+
     return (
-        <>
-        <footer>
+        <footer class='footer'>
             <div class="container1_footer">
                 <div class="sub1_footer">
                     <h3>N'hésitez pas à me contacter!</h3>
@@ -52,10 +55,9 @@ const Footer = () => {
 
             {/*Copyrights */}
            <div class="copyrights">
-               <span class="copyR"></span>
+               <span class="copyR">{date.getFullYear()} &copy; DaleCooper59 Tous droits réservés</span>
            </div>
         </footer>
-        </>
     );
 };
 

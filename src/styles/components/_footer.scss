@@ -1,0 +1,141 @@
+/********************************************************************************************
+*FOOTER
+*********************************************************************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(145.5deg, rgba(180, 192, 202, 0.92) 1.1%, rgb(250, 251, 253) 81.3%);
+
+    .container1_footer>div {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .container2_footer {
+        display: grid;
+        grid-template-columns: 4fr 1fr 3fr;
+        max-width: 100%;
+    }
+
+    .icon_legend {
+        font-style: italic;
+        text-align: center;
+    }
+
+    .title_block {
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    .social_footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 6rem;
+    }
+
+    #github {
+        color: rgb(85, 85, 85);
+    }
+
+    #discord {
+        color: rgb(142, 116, 165);
+    }
+
+    #linkedin {
+        color: rgb(10, 102, 194);
+    }
+
+    #twitter {
+        color: rgb(26, 145, 218);
+    }
+
+    #facebook {
+        color: rgb(45, 136, 255);
+    }
+
+    .list_footer {
+        margin: 0.2rem;
+        padding: 2px;
+
+        >li {
+            padding-top: 0.5rem;
+        }
+    }
+
+    .list_footer2>li {
+        padding: 0.7rem 0;
+    }
+
+    /*form*/
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+
+        label {
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        input {
+            padding: 0.2rem 0.5rem;
+            margin-bottom: 1.5rem;
+
+            &:focus {
+                color: #24818d;
+            }
+        }
+
+        textarea:focus {
+            color: #24818d;
+        }
+
+        .btn-form {
+            width: 70px;
+            height: 30px;
+            border: none;
+            border-radius: 50px;
+            margin: 1rem 1rem;
+            padding: 0 8px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: rgba(180, 192, 202, 0.92);
+            animation: moveInBottom 2s ease-out;
+            animation-fill-mode: backwards;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                background-color: rgba(234, 243, 250, 0.92);
+            }
+
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .copyR {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+}

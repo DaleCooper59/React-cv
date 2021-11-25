@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Barlow&display=swap');
 
 @mixin centerFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-$font-1: 'Barlow', sans-serif;
-$font-2:'Dancing Script', cursive;
+$font-1: 'Barlow',
+sans-serif;
+$font-2:'Dancing Script',
+cursive;
 $mainColorLink:#24818d;
 $mainColorLinkHover:#9ebbbe;
 
@@ -20,42 +22,47 @@ $black:#333;
 
 
 
-*{
-   -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }  
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
-li,a{
-  list-style: none;
-  text-decoration: none;
-}
-a, i{
-  color: $mainColorLink;
-}
 
-a:hover{
-  color: $mainColorLinkHover;
-  transition: 0.4s;
-}
+  li,
+  a {
+    list-style: none;
+    text-decoration: none;
+  }
 
-.menu button{
-  background: none;
-  border: none;
-  
-}
+  a,
+  i {
+    color: $mainColorLink;
+  }
 
-p{
-  padding: 3rem;
-  line-height: 1.7rem;
-  text-align: justify;
-}
+  a:hover {
+    color: $mainColorLinkHover;
+    transition: 0.4s;
+  }
 
-html, body {
+  .menu button {
+    background: none;
+    border: none;
+
+  }
+
+  p {
+    padding: 3rem;
+    line-height: 1.7rem;
+    text-align: justify;
+  }
+
+  html,
+  body {
     min-height: 100vh;
     max-width: 100%;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
     background-image: url(../img/tim-umphreys-6x1zA_0H9LA-unsplash.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -67,3 +74,4 @@ html, body {
     z-index: -10;
   }
 
+}

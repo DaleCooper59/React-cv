@@ -1,0 +1,32 @@
+@media screen and (max-width: 1060PX) {
+
+    /*Main*********************************************************************/
+
+    #experiences {
+        flex-direction: column-reverse;
+
+        p {
+            flex: 1;
+            padding: 2rem;
+        }
+    }
+
+    /*Slider******************************************************************/
+    .slider {
+        flex: 1;
+        width: 600px;
+        height: 450px;
+
+        .slides {
+            display: flex;
+            width: 500%;
+            height: 400px;
+
+            .slide a>img {
+                width: 100% !important;
+                height: 400px;
+            }
+        }
+    }
+
+}

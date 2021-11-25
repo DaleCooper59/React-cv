@@ -1,6 +1,21 @@
 import React from 'react';
 
 const Header = () => {
+    
+/*anime.js***********************************************************************/
+
+var lineDrawing = anime({
+    targets: '#lineDrawing .lines path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1000,
+    delay: function (el, i) {
+      return i * 250
+    },
+    direction: 'alternate',
+    loop: false
+  });
+
     return (
         <>
             <header>

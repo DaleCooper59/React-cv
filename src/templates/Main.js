@@ -36,7 +36,7 @@ const Main = () => {
                         net.
                         J'ai commencé par le language de structuration <b>HTML 5</b>.
                         Ensuite vint le style avec <b>CSS 3</b>. Tout de suite séduit j'ai voulu en savoir davantage.
-                        J'ai découvert la programmation à travers l'algorythmie puis le<b>Javascript</b>, etc.
+                        J'ai découvert la programmation à travers l'algorythmie puis le<b> Javascript</b>, etc.
 
                         J'ai notemment aqcuis de nombreuses compétences, parmi les fameux Softskills.
 
@@ -65,24 +65,24 @@ const Main = () => {
                     </ul>
                     <div id="competences">
                         <div className="ele">
-                            <img src="./img/icon/html-5.png" alt="icon html 5" className="img_competences" id="html-5" />
-                            <img src="./img/icon/css-3.png" alt="icon css 3" className="img_competences" id="css-3" />
-                            <img src="./img/icon/script-java.png" alt="icon Javascript" className="img_competences" id="Javascript" />
-                            <img src="./img/icon/bootstrap.png" alt="icon Bootstrap" id="Bootstrap" />
-                            <img src="./img/icon/tailwind.png" alt="icon tailwind" id="tailwind"/>
-                            <img src="./img/icon/sass.png" alt="icon sass" class="img_competences" id="sass"/>
-                            <img src="./img/icon/sql-server.png" alt="icon sql" class="img_competences" id="sql"/>
-                            <img width="80" height="80" src="./img/icon/laragon.png" alt="icon laragon" class="img_competences" id="laragon"/>
-                            <img width="80" height="80"  src="./img/icon/phpMyAdmin.png" alt="icon phpMyAdmin" class="img_competences" id="phpMyAdmin"/>
-                            <img src="./img/icon/mcd.png" alt="icon mcd" class="img_competences" id="mcd"/>
-                            <img width="80" height="80"  src="./img/icon/workbench.png" alt="icon workbench" class="img_competences" id="workbench"/>
-                            <img src="./img/icon/php.png" alt="icon php" class="img_competences" id="php"/>
-                            <img src="./img/icon/laravel.png" alt="icon laravel" class="img_competences" id="laravel"/>
-                            <img src="./img/icon/git.png" alt="icon Git" class="img_competences" id="Git"/>
-                            <img src="./img/icon/gitlab.png" alt="icon gitlab" class="img_competences" id="gitlab"/>
-                            <img src="./img/icon/github.png" alt="icon Github" class="img_competences" id="Github"/>
-                            <img width="80" height="80"  src="./img/icon/wordpress.png" alt="icon wordpress" class="img_competences" id="wordpress"/>
-                            <img width="80" height="80"  src="./img/icon/o2switch.png" alt="icon o2switch" class="img_competences" id="o2switch"/>
+                            <img src="./icon/html-5.png" alt="icon html 5" className="img_competences" id="html-5" />
+                            <img src="./icon/css-3.png" alt="icon css 3" className="img_competences" id="css-3" />
+                            <img src="./icon/script-java.png" alt="icon Javascript" className="img_competences" id="Javascript" />
+                            <img src="./icon/bootstrap.png" alt="icon Bootstrap" id="Bootstrap" />
+                            <img src="./icon/tailwind.png" alt="icon tailwind" id="tailwind"/>
+                            <img src="./icon/sass.png" alt="icon sass" class="img_competences" id="sass"/>
+                            <img src="./icon/sql-server.png" alt="icon sql" class="img_competences" id="sql"/>
+                            <img width="80" height="80" src="./icon/laragon.png" alt="icon laragon" class="img_competences" id="laragon"/>
+                            <img width="80" height="80"  src="./icon/phpMyAdmin.png" alt="icon phpMyAdmin" class="img_competences" id="phpMyAdmin"/>
+                            <img src="./icon/mcd.png" alt="icon mcd" class="img_competences" id="mcd"/>
+                            <img width="80" height="80"  src="./icon/workbench.png" alt="icon workbench" class="img_competences" id="workbench"/>
+                            <img src="./icon/php.png" alt="icon php" class="img_competences" id="php"/>
+                            <img src="./icon/laravel.png" alt="icon laravel" class="img_competences" id="laravel"/>
+                            <img src="./icon/git.png" alt="icon Git" class="img_competences" id="Git"/>
+                            <img src="./icon/gitlab.png" alt="icon gitlab" class="img_competences" id="gitlab"/>
+                            <img src="./icon/github.png" alt="icon Github" class="img_competences" id="Github"/>
+                            <img width="80" height="80"  src="./icon/wordpress.png" alt="icon wordpress" class="img_competences" id="wordpress"/>
+                            <img width="80" height="80"  src="./icon/o2switch.png" alt="icon o2switch" class="img_competences" id="o2switch"/>
                         </div>
 
                         <small>Icons made by : <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect">Pixel Perfect</a>,
@@ -93,7 +93,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section>
+                <section className="section_slide">
                     <ul className="menu menu3">
                         <li> <a href={url}>Présentation</a> </li>
                         <li> <a href={url}>Compétences</a> </li>
