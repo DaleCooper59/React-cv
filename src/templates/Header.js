@@ -1,26 +1,35 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import anime from 'animejs';
+
 
 const Header = () => {
     
 /*anime.js***********************************************************************/
+const headerDrawing = () =>  {
+    anime({
+        targets: '#lineDrawing .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function (el, i) {
+          return i * 250
+        },
+        direction: 'alternate',
+        loop: false
+    });
+  }
 
-var lineDrawing = anime({
-    targets: '#lineDrawing .lines path',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1000,
-    delay: function (el, i) {
-      return i * 250
-    },
-    direction: 'alternate',
-    loop: false
-  });
-
+  useEffect(() => {
+    headerDrawing();
+  }, []);
     return (
         <>
+       
+
             <header>
                 <div className="header_title #svg">
-                    <div className="title_portfolio" id="lineDrawing"> <svg viewBox="50% 50% 500 500" width="615" height="150">
+                
+                    <div className="title_portfolio" id="lineDrawing"> <svg  viewBox="50% 50% 500 500" width="615" height="150">
                             <g stroke-linecap="round" fill-rule="evenodd" stroke="#fb8d80 " stroke-width="0.35mm" className="lines">
                                 <path
                                     d="M 0 37.551 L 0 0.401 L 1.025 0.401 L 2.013 0.401 L 3 0.401 A 31.035 31.035 0 0 0 4.054 0.382 Q 4.595 0.364 5.201 0.328 A 55.887 55.887 0 0 0 5.612 0.301 Q 7.1 0.201 8.763 0.101 Q 10.425 0.001 12.1 0.001 A 28.048 28.048 0 0 1 17.098 0.417 Q 19.852 0.916 21.998 2.017 A 12.796 12.796 0 0 1 25.587 4.714 A 15.495 15.495 0 0 1 29.085 11.107 Q 29.761 13.478 29.909 16.306 A 31.045 31.045 0 0 1 29.95 17.926 A 30.145 30.145 0 0 1 29.552 22.957 Q 29.006 26.18 27.713 28.789 A 16.255 16.255 0 0 1 23.876 33.858 A 15.462 15.462 0 0 1 21.337 35.664 Q 17.327 37.954 11.849 37.954 A 26.549 26.549 0 0 1 11.5 37.951 A 84.438 84.438 0 0 1 9.319 37.87 A 105.125 105.125 0 0 1 6.975 37.726 A 71.867 71.867 0 0 0 4.662 37.595 A 52.64 52.64 0 0 0 2.575 37.551 L 1.713 37.551 L 0.85 37.551 L 0 37.551 Z M 6.55 5.101 L 6.55 32.651 A 13.418 13.418 0 0 0 7.538 32.83 Q 8.072 32.907 8.681 32.959 A 25.841 25.841 0 0 0 9.25 33.001 A 38.822 38.822 0 0 0 11.669 33.081 Q 11.987 33.082 12.3 33.076 A 11.839 11.839 0 0 0 15.485 32.637 A 9.957 9.957 0 0 0 17.937 31.564 A 8.861 8.861 0 0 0 20.624 28.976 A 12.242 12.242 0 0 0 21.75 26.926 A 14.628 14.628 0 0 0 22.634 24.092 Q 22.933 22.674 23.05 21.01 A 31.901 31.901 0 0 0 23.125 18.776 A 32.914 32.914 0 0 0 22.981 15.593 Q 22.686 12.567 21.788 10.501 A 9.696 9.696 0 0 0 20.301 8.071 A 7.943 7.943 0 0 0 17.775 6.089 A 11.79 11.79 0 0 0 14.976 5.129 Q 13.663 4.846 12.139 4.775 A 22.398 22.398 0 0 0 11.1 4.751 Q 9.75 4.751 8.538 4.851 Q 7.325 4.951 6.55 5.101 Z"
@@ -80,7 +89,7 @@ var lineDrawing = anime({
                             </g>
                         </svg>
                     </div>
-
+                    
                     <div id="header_mobile">
                         <h1>DUVINAGE CHRISTOPHER</h1>
                     </div>
@@ -90,6 +99,7 @@ var lineDrawing = anime({
                      <small>Développeur Web et intégrateur</small>
                 </div>
             </header>
+           
         </>
     );
 };

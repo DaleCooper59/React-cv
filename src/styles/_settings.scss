@@ -28,7 +28,10 @@ $black:#333;
   box-sizing: border-box;
   scroll-behavior: smooth;
 
-
+  .blocTitle{
+    color: rgb(34, 166, 179);
+    text-align: center ;
+  }
   li,
   a {
     list-style: none;
