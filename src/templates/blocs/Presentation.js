@@ -4,11 +4,11 @@ const Presentation = () => {
     return (
         <section>
   <h2 className='blocTitle'>Présentation</h2>
-                <div className="j" id="Présentation">
+                <div className="j" id="presentation">
                   
                     <p>Véritable passionné par le développement Web et les nouvelles technologies en général
                         depuis plusieurs années, ma curiosité m'amène a être en constante évolution.
-                        Je suis DUVINAGE Christopher comme le suggère le <a href="#svg">"SVG"</a> plus haut et je suis
+                        Je m'appelle donc DUVINAGE Christopher, je suis
                         fier de pouvoir vous offrir mes
                         compétences.
                         M'étant formé en autodidacte, je cherche constamment à perfectionner mon travail.
@@ -22,7 +22,7 @@ const Presentation = () => {
                     </p>
                     <p>
                         Qui ne s'est jamais demandé comment fonctionne une page internet?
-                        Que de mystères résolus en arpentant les nombresuses sources plus ou moins bien fournies sur le
+                        Que de mystères résolus en arpentant les nombreuses sources plus ou moins bien fournies sur le
                         net.
                         J'ai commencé par le language de structuration <b>HTML 5</b>.
                         Ensuite vint le style avec <b>CSS 3</b>. Tout de suite séduit j'ai voulu en savoir davantage.
@@ -30,8 +30,8 @@ const Presentation = () => {
 
                         J'ai notemment aqcuis de nombreuses compétences, parmi les fameux Softskills.
 
-                        Dans cette formation qui dure jusqu'au <strong>30 Octobre 2021</strong>, je consolide mes
-                        connaissances et j'apprend de nouveaux languages.
+                        Dans cette formation qui dure jusqu'au <strong>30 Octobre 2021</strong>, j'ai consolidé mes
+                        connaissances et appris de nouveaux languages.
                         La perspective de monter en compétences est une réelle satisfaction.
 
                         J'ai effectué un Stage à l'agence Akawam qui se situe à Villeneuve d'ascq du<strong> 26 Juillet</strong> au <strong> 22 Octobre 2021</strong>.
@@ -40,6 +40,7 @@ const Presentation = () => {
                         J'ai pu à travers mes réalisations largement progressé sur la programmation orientée objet et le modèle MVC.
                         Ce stage m'a permis aussi de me mettre dans les conditions de travail en agance digitale avec les contraintes liées au délai et à la satisfaction du client.
 
+                        A l'issue de cette formation j'ai été diplômé d'un titre niveau 5 (Bac +2).
 
                         Voici mes compétences <i class="fas fa-arrow-circle-down"></i>
                         </p>

@@ -5,7 +5,7 @@ import Experiences from './blocs/Experiences';
 import Presentation from './blocs/Presentation';
 
 const Main = () => {
-    let url='';
+    
     return (
         <>
             <main>

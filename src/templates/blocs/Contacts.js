@@ -10,7 +10,7 @@ const Contacts = () => {
             <li> <a href={url}>Expériences</a></li>
             <li className='id_li1' id="four"> <a href="#Présentation">Contact</a></li>
         </ul>*/}
-        <div id="Contact">
+        <div id="contact">
       
             <ul id="ul-contact">
                 <li>DUVINAGE CHRISTOPHER</li>
