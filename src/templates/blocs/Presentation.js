@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Element } from 'react-scroll'
 
 const Presentation = () => {
     return (
         <section>
   <h2 className='blocTitle'>Présentation</h2>
-                <div className="j" id="presentation">
+                <div className="j" id="presentation" name="presentation">
                   
                     <p>Véritable passionné par le développement Web et les nouvelles technologies en général
                         depuis plusieurs années, ma curiosité m'amène a être en constante évolution.

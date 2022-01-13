@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
 
 //import icons from react icons
@@ -45,23 +45,59 @@ const Sidebar = () => {
 
           <SidebarContent>
             
+             
             <Menu iconShape="square">
                 
-                <MenuItem icon={<FaList />}>Présentation
-                    <Link  to="#presentation" />
+                <MenuItem icon={<FaList />}>
+                <Link
+                activeClass="active"
+                to="presentation"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >Présentation
+              </Link>
                 </MenuItem> 
 
                
-                <MenuItem icon={<FaRegHeart />}>Compétences
-                    <Link  to="#competences" />
+                <MenuItem icon={<FaRegHeart />}>
+                <Link
+                activeClass="active"
+                to="competences"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Compétences
+              </Link>
                 </MenuItem> 
                
-                <MenuItem icon={<FaRegHeart />}>Expériences
-                    <Link  to="#experiences" />
+                <MenuItem icon={<FaRegHeart />}>
+                <Link
+                activeClass="active"
+                to="experiences"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Expériences
+              </Link>
                 </MenuItem>
 
-                <MenuItem icon={<RiPencilLine />}>Contacts
-                    <Link  to="#contact" />
+                <MenuItem icon={<RiPencilLine />}> 
+                <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contacts
+              </Link>
                 </MenuItem>
                
             </Menu>     

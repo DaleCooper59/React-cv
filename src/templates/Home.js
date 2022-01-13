@@ -6,12 +6,11 @@ import Main from './Main';
 
 const Home = () => {
     return (
-        <div>
-          <Sidebar />
+        <div>            
+           <Sidebar />
            <Header />
            <Main />
            <Footer />
-           
            
         </div>
     );

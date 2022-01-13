@@ -1,14 +1,10 @@
 import React from 'react';
+import { Element } from "react-scroll";
 
 const Expériences = () => {
     return (
         <section className="section_slide">
-        {/*<ul className="menu menu3">
-            <li> <a href={url}>Présentation</a> </li>
-            <li> <a href={url}>Compétences</a> </li>
-            <li className='id_li1' id="three"> <a href="#Contact">Expériences</a></li>
-            <li> <a href={url}>Contact</a></li>
-    </ul>*/}
+        
     <h2 className='blocTitle'>Expériences</h2>
         <div id="experiences">
             
