@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Element } from 'react-scroll'
 
 const Presentation = () => {
     return (

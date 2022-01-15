@@ -4,11 +4,12 @@ import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarConten
 
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
-import {FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import {FiLogOut, FiArrowLeftCircle, FiArrowRightCircle, FiArrowUpCircle } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 
 //import sidebar css from react-pro-sidebar module and our custom css 
 import "react-pro-sidebar/dist/css/styles.css";
+import ScrollToTop from './ScrollToTop';
 
 
 const Sidebar = () => {
@@ -22,6 +23,7 @@ const Sidebar = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
+
     return (
         <>
       <div id="header">  
@@ -31,9 +33,10 @@ const Sidebar = () => {
           <SidebarHeader>
           <div className="logotext">
               {/* small and big change using menucollapse state */}
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>{menuCollapse ?
+              (<img src='../../public/favicon.ico'/>  ): "Big Logo"}</p>
             </div>
-            <div className="closemenu" onClick={menuIconClick}>
+            <div className="closemenu" onMouseEnter={menuIconClick}>
                 {/* changing menu collapse icon on click */}
               {menuCollapse ? (
                 <FiArrowRightCircle/>
@@ -46,10 +49,10 @@ const Sidebar = () => {
           <SidebarContent>
             
              
-            <Menu iconShape="square">
-                
+            <Menu iconShape="circle">
+               
                 <MenuItem icon={<FaList />}>
-                <Link
+                <Link 
                 activeClass="active"
                 to="presentation"
                 spy={true}
@@ -106,7 +109,9 @@ const Sidebar = () => {
           
           <SidebarFooter>
             <Menu iconShape="circle">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+             
+               <ScrollToTop />
+             
             </Menu>
           </SidebarFooter>
         </ProSidebar>
