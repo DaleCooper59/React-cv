@@ -18,11 +18,11 @@ const Footer = () => {
                 <div class="sub2_footer block_footer1">
                     <p class="icon_legend">Voici mes différents profils via les réseaux sociaux, à très bientôt.</p>
                     <ul class="social_footer list_footer">
-                        <li><a href="https://github.com/DaleCooper59" id="github">Github</a></li>
+                        <li> <a href="https://www.facebook.com/christopher.duvinage/"  id="facebook">Facebook</a> </li>
                         <li> <a href="https://discord.com"  id="discord" >Discord</a> </li>
                         <li> <a href="https://www.linkedin.com/in/christopher-duvinage-8a38091a6/" id="linkedin">Linkedin</a> </li>
                         <li> <a href="https://twitter.com/DuvinageChrist1"  id="twitter">Twitter</a> </li>
-                        <li> <a href="https://www.facebook.com/christopher.duvinage/"  id="facebook">Facebook</a> </li>
+                        <li><a href="https://github.com/DaleCooper59" id="github">Github</a></li>
                     </ul>
                 </div>
 

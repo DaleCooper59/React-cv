@@ -4,7 +4,7 @@ import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarConten
 
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
-import {FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 
 //import sidebar css from react-pro-sidebar module and our custom css 
@@ -25,7 +25,7 @@ const Sidebar = () => {
     }, 300);
     
     };
-    
+
     return (
         <>
       <div id="header">  
@@ -34,7 +34,7 @@ const Sidebar = () => {
           <SidebarHeader>
           <div className="logotext">
               <p>{menuCollapse ?
-              (<img src='../../public/favicon.ico'/>  ): "Big Logo"}</p>
+              'simple': "Big Logo"}</p>
             </div>
             <div className="closemenu" onMouseEnter={menuIconHover}>
               {menuCollapse ? (
