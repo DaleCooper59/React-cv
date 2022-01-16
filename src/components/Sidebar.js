@@ -4,7 +4,7 @@ import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarConten
 
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
-import {FiLogOut, FiArrowLeftCircle, FiArrowRightCircle, FiArrowUpCircle } from "react-icons/fi";
+import {FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 
 //import sidebar css from react-pro-sidebar module and our custom css 
@@ -18,26 +18,25 @@ const Sidebar = () => {
     const [menuCollapse, setMenuCollapse] = useState(false)
 
     //create a custom function that will change menucollapse state from false to true and true to false
-    const menuIconClick = () => {
+    const menuIconHover = () => {
     //condition checking to change state from true to false and vice versa
-    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
-  };
-
-
+    setTimeout(() => {
+      menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+    }, 300);
+    
+    };
+    
     return (
         <>
       <div id="header">  
      
-          {/* collapsed props to change menu size using menucollapse state */}
         <ProSidebar collapsed={menuCollapse}>
           <SidebarHeader>
           <div className="logotext">
-              {/* small and big change using menucollapse state */}
               <p>{menuCollapse ?
               (<img src='../../public/favicon.ico'/>  ): "Big Logo"}</p>
             </div>
-            <div className="closemenu" onMouseEnter={menuIconClick}>
-                {/* changing menu collapse icon on click */}
+            <div className="closemenu" onMouseEnter={menuIconHover}>
               {menuCollapse ? (
                 <FiArrowRightCircle/>
               ) : (

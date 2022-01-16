@@ -23,11 +23,11 @@
   .pro-sidebar.collapsed {
     width: 80px;
     min-width: 80px;
-    opacity: 0.2;
+    opacity: 0.5;
     transition: all 0.4s ease-in;
 
     &:hover {
-      opacity: 1;
+      background-color: $black;
     }
   }
 
@@ -88,3 +88,4 @@
     }
   }
 }
+
