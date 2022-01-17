@@ -5,9 +5,10 @@ import logo64 from '../img/ico/64powl.ico';
 import logo128 from '../img/128powl2.ico';
 
 //import icons from react icons
-import { FaList, FaRegHeart } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { GrWorkshop, GrContact } from "react-icons/gr";
+import { GiSkills, GiBookmark } from "react-icons/gi";
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
 
 //import sidebar css from react-pro-sidebar module and our custom css 
 import "react-pro-sidebar/dist/css/styles.css";
@@ -63,7 +64,8 @@ const Sidebar = () => {
              
             <Menu iconShape="circle">
                
-                <MenuItem icon={<FaList />}>
+                <MenuItem icon={<IconContext.Provider value={{ style: { color: 'white' } }}>
+                  <GrWorkshop/></IconContext.Provider>}>
                 <Link 
                 activeClass="active"
                 to="presentation"
@@ -71,12 +73,13 @@ const Sidebar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                title='Présentation'
               >Présentation
               </Link>
                 </MenuItem> 
 
                
-                <MenuItem icon={<FaRegHeart />}>
+                <MenuItem icon={<GiSkills />}>
                 <Link
                 activeClass="active"
                 to="competences"
@@ -84,12 +87,13 @@ const Sidebar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                title='Compétences'
               >
                 Compétences
               </Link>
                 </MenuItem> 
                
-                <MenuItem icon={<FaRegHeart />}>
+                <MenuItem icon={<GiBookmark />}>
                 <Link
                 activeClass="active"
                 to="experiences"
@@ -97,12 +101,13 @@ const Sidebar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                title='Expériences'
               >
                 Expériences
               </Link>
                 </MenuItem>
 
-                <MenuItem icon={<RiPencilLine />}> 
+                <MenuItem icon={<GrContact />}> 
                 <Link
                 activeClass="active"
                 to="contact"
@@ -110,6 +115,7 @@ const Sidebar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                title='Contacts'
               >
                 Contacts
               </Link>
