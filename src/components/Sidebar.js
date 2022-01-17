@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
+import logo64 from '../img/ico/64powl.ico';
+import logo128 from '../img/128powl2.ico';
 
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
@@ -21,10 +23,18 @@ const Sidebar = () => {
     const menuIconHover = () => {
     //condition checking to change state from true to false and vice versa
     setTimeout(() => {
-      menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+      let header = document.getElementsByClassName('logotext')[0].parentNode;
+     if(menuCollapse === true){
+       setMenuCollapse(false);
+       header.classList.remove('pro-sidebar-header');
+     }else{
+       setMenuCollapse(true); 
+       header.classList.add('pro-sidebar-header');
+     }
     }, 300);
     
     };
+
 
     return (
         <>
@@ -33,8 +43,8 @@ const Sidebar = () => {
         <ProSidebar collapsed={menuCollapse}>
           <SidebarHeader>
           <div className="logotext">
-              <p>{menuCollapse ?
-              'simple': "Big Logo"}</p>
+             {menuCollapse ? <img  src={logo64} alt="logo" />
+           : <img  src={logo128} alt="Biglogo" />}
             </div>
             <div className="closemenu" onMouseEnter={menuIconHover}>
               {menuCollapse ? (
