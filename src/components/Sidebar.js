@@ -30,6 +30,9 @@ const Sidebar = () => {
      }else{
        setMenuCollapse(true); 
        header.classList.add('pro-sidebar-header');
+       header.parentNode.parentNode.addEventListener('mouseleave', e =>{
+         setMenuCollapse(true);
+       })
      }
     }, 300);
     

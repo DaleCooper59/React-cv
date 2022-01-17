@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from '../components/Slider';
 import Competences from './blocs/Competences';
 import Contacts from './blocs/Contacts';
 import Experiences from './blocs/Experiences';
@@ -22,7 +21,7 @@ const Main = () => {
                 <Competences />
                 <Experiences />  
                 <Contacts />
-                <Slider />
+                
             </div>
             </main>
         </>

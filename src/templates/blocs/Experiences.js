@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from '../../components/Slider';
 
 const Expériences = () => {
     return (
@@ -14,7 +15,9 @@ const Expériences = () => {
                 j'ai toujours accordé du temps à ma passion pour le développement Web.
                 Depuis quelques années je peux m'y consacrer plus amplement.
             </p>
-            <div className="slider">
+            <Slider />
+            {/*
+<div className="slider">
                 <div className="slides animateSlides">
                     <input type="radio" name="radio-btn" id="rad1" />
                     <input type="radio" name="radio-btn" id="rad2" />
@@ -38,7 +41,7 @@ const Expériences = () => {
                     </div>
 
                 </div>
-                {/*slides*/}
+                slides*
 
                 <div className="nav_manuel" id="nav_manual">
                     <label for="rad1" className="manuel_btn"></label>
@@ -49,6 +52,8 @@ const Expériences = () => {
                 </div>
 
             </div>
+            */}
+            
 
             {/*SLIDER */}
         </div>
