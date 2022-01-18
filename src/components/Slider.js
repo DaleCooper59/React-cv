@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState }from 'react';
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import "react-awesome-slider/dist/styles.css";
@@ -34,8 +34,22 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 
 const Slider = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
+function hovered(e) {
+    e.target.classList.add('hovered')
+    setIsHovered(true)
+  }
+function notHovered(e) {
+    let image = document.getElementsByClassName('hovered');
+    console.log(image.classList);
+   //classList.remove('hovered')
+    setIsHovered(false)
+  }
+ 
     return (
         
+
             <AutoplaySlider
                 play={true}
                 cancelOnInteraction={true} // should stop playing on user interaction
@@ -43,7 +57,8 @@ const Slider = () => {
                 className="fit"
             >
                 {data.map((d) => (
-                    <div className='slider'>
+                  
+                    <div onMouseOver={hovered} onMouseLeave={notHovered} key={d.id} className='slider'>
                         <a href={d.href}>
                             <img  src={d.path} />
                         </a>

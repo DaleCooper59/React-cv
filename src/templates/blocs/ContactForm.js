@@ -74,7 +74,7 @@ const ContactForm = () => {
             <form className="contact-form" id='contact-form' onSubmit={sendEmail}>
 
                 <label for="surname">Nom et prénom *</label>
-                <input type="text" id="surname" name="surname" className="text-box" pattern="^[A-Za-z ,.'-]+$" minlength="4" maxlength="80"
+                <input type="text" id="surname" name="surname" className="text-box" pattern="^[A-Za-z ,.'-]+$" minLength={"4"} maxLength={"80"}
                     autoComplete="off" onChange={(e) => setSurname(e.target.value)} value={surname} required />
 
 

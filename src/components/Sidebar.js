@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
-import logo64 from '../img/ico/64powl.ico';
+import logo64 from '../img/ico/CD_white64-removebg-preview.ico';
 import logo128 from '../img/128powl2.ico';
 
 //import icons from react icons
 import { IconContext } from "react-icons";
-import { GrWorkshop, GrContact } from "react-icons/gr";
+import { GrUser, GrContact } from "react-icons/gr";
 import { GiSkills, GiBookmark } from "react-icons/gi";
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 
@@ -25,17 +25,18 @@ const Sidebar = () => {
     //condition checking to change state from true to false and vice versa
     setTimeout(() => {
       let header = document.getElementsByClassName('logotext')[0].parentNode;
-     if(menuCollapse === true){
+     if(menuCollapse ){
        setMenuCollapse(false);
        header.classList.remove('pro-sidebar-header');
      }else{
        setMenuCollapse(true); 
        header.classList.add('pro-sidebar-header');
-       header.parentNode.parentNode.addEventListener('mouseleave', e =>{
+       header.parentNode.addEventListener('mouseleave', e =>{
          setMenuCollapse(true);
+         header.classList.add('pro-sidebar-header');
        })
      }
-    }, 300);
+    }, 500);
     
     };
 
@@ -65,7 +66,7 @@ const Sidebar = () => {
             <Menu iconShape="circle">
                
                 <MenuItem icon={<IconContext.Provider value={{ style: { color: 'white' } }}>
-                  <GrWorkshop/></IconContext.Provider>}>
+                  <GrUser/></IconContext.Provider>}>
                 <Link 
                 activeClass="active"
                 to="presentation"

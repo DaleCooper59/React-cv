@@ -61,13 +61,14 @@
 
       .pro-sidebar-header {
         background-color: black;
+        transition: all 0.4s ease-in-out;
       }
 
       ul {
         padding: 0 1px;
 
         .pro-inner-item {
-          color: white;
+          color: white ;
           margin: 10px 0px;
           font-weight: bold;
 
