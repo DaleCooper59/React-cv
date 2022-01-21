@@ -18,25 +18,29 @@ import ScrollToTop from './ScrollToTop';
 const Sidebar = () => {
     
     //create initial menuCollapse state using useState hook
-    const [menuCollapse, setMenuCollapse] = useState(false)
-
+    const [menuCollapse, setMenuCollapse] = useState(false);    
+    
     //create a custom function that will change menucollapse state from false to true and true to false
     const menuIconHover = () => {
     //condition checking to change state from true to false and vice versa
     setTimeout(() => {
       let header = document.getElementsByClassName('logotext')[0].parentNode;
+      let topHeader = document.getElementById('header');
+      
      if(menuCollapse ){
        setMenuCollapse(false);
        header.classList.remove('pro-sidebar-header');
+       topHeader.style.zIndex= '1000';
      }else{
        setMenuCollapse(true); 
        header.classList.add('pro-sidebar-header');
        header.parentNode.addEventListener('mouseleave', e =>{
          setMenuCollapse(true);
          header.classList.add('pro-sidebar-header');
+         topHeader.style.zIndex = '1';
        })
      }
-    }, 500);
+    }, 300);
     
     };
 

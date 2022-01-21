@@ -33,8 +33,11 @@
 
     .social_footer {
         display: flex;
+        position: relative;
+        z-index: 100;
         justify-content: space-around;
         padding: 0 6rem;
+        background-color: black;
     }
 
     #github {
