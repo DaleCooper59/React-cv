@@ -65,7 +65,7 @@ $black:#333;
     max-width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(../img/tim-umphreys-6x1zA_0H9LA-unsplash.jpg);
+    background-color: url(../img/tim-umphreys-6x1zA_0H9LA-unsplash.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -74,6 +74,16 @@ $black:#333;
     bottom: 0;
     font-family: $font-1;
     z-index: -10;
+
+    #tsparticles {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 65%, rgba(31, 136, 242, 1) 100%);
+  }
   }
 
 }
